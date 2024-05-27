@@ -13,6 +13,7 @@ To run TR-Fuzz, follow these steps:
 
 
 You can use the GCC test suite alone to train and generate C programs, use the collected C programs, or combine both. If you want to use only the GCC test suite or the collected C programs, change the paths in the code to the path of the GCC test suite (located in the gcc/testsuite directory) or the path of the existing C programs. If you want to combine both, you need to modify the code in the training data selection part. (lines 25-30 in data_prepare.py and lines 254-260 in model_generate.py)
+Any code involving paths may need to be checked and modified, as the paths you use might not be exactly the same as ours.
 
 According to our experimental results, using the collected C programs yields a higher success rate. You can also collect your own C programs to help the model better learn the characteristics of real-world C programs.
 
