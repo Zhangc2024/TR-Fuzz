@@ -41,12 +41,12 @@ def verify_correctness(text, filename, mode):
 
     stderr = str(p1.stdout.read())
     print(stderr)
-    if ('internal compiler error' in stderr):     
-        return True
-    if ('error' in stderr):
-        return False
-    else:
-        return True
+    # if ('internal compiler error' in stderr):     
+    #     return True
+    # if ('error' in stderr):
+    #     return False
+    # else:
+    #     return True
 
 
 def generate_verify_correctness(text, filename, mode):
