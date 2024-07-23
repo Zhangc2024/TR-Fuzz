@@ -33,8 +33,7 @@ def verify_correctness(text, filename, mode):
 
     index = filename.rfind('/') + 1
     obj_name = filename[index:-2]
-    command = 'gcc -c -w ' + filename + ' -o ./compile_build/' + obj_name + '.o'
-
+    
     f.write(text)                               
     f.close()   # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     p1 = Popen(command, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)  。
